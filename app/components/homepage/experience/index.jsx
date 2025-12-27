@@ -65,6 +65,11 @@ function Experience() {
                           <p className="text-sm sm:text-base">
                             {experience.company}
                           </p>
+                          <div className="text-xs sm:text-sm my-2"
+                            dangerouslySetInnerHTML={{
+                              __html: experience.description || '',
+                            }}
+                          ></div>
                         </div>
                       </div>
                     </div>
